@@ -36,7 +36,7 @@
     <dep.netty.version>4.1.27.Final</dep.netty.version>
     <dep.jackson.version>2.9.8</dep.jackson.version>
     <dep.hadoop.version>2.7.1</dep.hadoop.version>
-    <dep.fbs.version>1.9.0</dep.fbs.version>
+    <dep.fbs.version>1.11.1</dep.fbs.version>
     <dep.flatc.version>1.9.0</dep.flatc.version>
     <arrow.vector.classifier />
     <forkCount>2</forkCount>
