@@ -1,0 +1,52 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/java"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.puppycrawl.tools:checkstyle
+    versions:
+    - ">= 8.18.a, < 8.19"
+  - dependency-name: de.huxhorn.lilith:de.huxhorn.lilith.logback.appender.multiplex-classic
+    versions:
+    - ">= 8.2.a, < 8.3"
+  - dependency-name: org.apache.maven.plugins:maven-assembly-plugin
+    versions:
+    - ">= 3.2.a, < 3.3"
+  - dependency-name: org.codehaus.mojo:exec-maven-plugin
+    versions:
+    - ">= 1.6.a, < 1.7"
+  - dependency-name: org.slf4j:jcl-over-slf4j
+    versions:
+    - "> 1.7.5, < 1.8"
+  - dependency-name: org.slf4j:jul-to-slf4j
+    versions:
+    - "> 1.7.25, < 1.8"
+  - dependency-name: org.slf4j:log4j-over-slf4j
+    versions:
+    - "> 1.7.25, < 1.8"
+  - dependency-name: org.slf4j:slf4j-api
+    versions:
+    - "> 1.7.25, < 1.8"
+  - dependency-name: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-databind
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-annotations
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: com.fasterxml.jackson.core:jackson-core
+    versions:
+    - 2.12.1
+    - 2.12.2
+  - dependency-name: org.junit.platform:junit-platform-runner
+    versions:
+    - 1.7.0
